@@ -1,0 +1,63 @@
+{
+    "name": "directory-comments",
+    "publisher": "peterjohnhunt",
+    "displayName": "Directory Comments",
+    "description": "Decorative comment snippets for better organization",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/peterjohnhunt/vscode-directory-comments"
+    },
+    "keywords": [
+        "Organization",
+        "Comments",
+        "Documentation"
+    ],
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.24.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "activationEvents": [
+        "onLanguage:html",
+        "onLanguage:scss",
+        "onLanguage:php",
+        "onLanguage:javascript"
+    ],
+    "main": "./out/extension",
+    "contributes": {
+        "snippets": [
+            {
+                "language": "php",
+                "path": "./snippets/php.json"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/html.json"
+            },
+            {
+                "language": "scss",
+                "path": "./snippets/scss.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/javascript.json"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.22",
+        "tslint": "^5.8.0",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42"
+    }
+}

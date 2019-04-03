@@ -1,0 +1,66 @@
+{
+    "Directory": {
+        "prefix": "dir",
+        "body": "//░░░░░░░░░░░░░░░░░░░░░░░░░░░\n//\n//    DIRECTORY\n//\n//    _${1:Section}\n//\n//░░░░░░░░░░░░░░░░░░░░░░░░░░░\n\n$2"
+    },
+    "Directory (Index) Section": {
+        "prefix": "isec",
+        "body": "//    _${1:Section}"
+    },
+    "Directory (Index) Subsection": {
+        "prefix": "isub",
+        "body": "//      ∟${1:Subsection}"
+    },
+    "Section": {
+        "prefix": "sec",
+        "body": "//≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡\n// _${1:Section}\n//≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡\n$2"
+    },
+    "Subsection": {
+        "prefix": "sub",
+        "body": "//∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴\n// ∟${1:Subsection}\n//∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴\n$2"
+    },
+    "DocBlock (Notes) Section": {
+        "prefix": "ns",
+        "body": "/** ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡\n*\nna${1:v}\n*\n*///≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡"
+    },
+    "DocBlock (Notes) Section w/ Version & Author": {
+        "prefix": "nsva",
+        "body": "/** ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡\n*\n*    @version 1.0.0\n*    @author ${1:Name} (${2:1.0.0})\n*\n*///≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡"
+    },
+    "DocBlock (Notes) Subsection": {
+        "prefix": "nss",
+        "body": "/** ∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵\n*\nna${1:v}\n*\n*///∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴"
+    },
+    "DocBlock (Notes) Subsection w/ Version & Author": {
+        "prefix": "nssva",
+        "body": "/** ∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵\n*\n*    @version 1.0.0\n*    @author ${1:Name} (${2:1.0.0})\n*\n*///∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴"
+    },
+    "DocBlock (Notes) Description": {
+        "prefix": "nad",
+        "body": "*    Description:\n*    ${1:Start describing code below}"
+    },
+    "DocBlock (Notes) Version": {
+        "prefix": "nav",
+        "body": "*    @version 1.0.0$1"
+    },
+    "DocBlock (Notes) Author": {
+        "prefix": "naa",
+        "body": "*    @author ${1:Name} (${2:1.0.0})"
+    },
+    "DocBlock (Notes) Return": {
+        "prefix": "nar",
+        "body": "*    @return ${1:string} $2"
+    },
+    "DocBlock (Notes) Parameters": {
+        "prefix": "nap",
+        "body": "*    @param ${1:Parameter} $2"
+    },
+    "DocBlock (Notes) See": {
+        "prefix": "nas",
+        "body": "*    @see ${1:Reference} $2"
+    },
+    "DocBlock (Notes) Function Use": {
+        "prefix": "nau",
+        "body": "*    @uses ${1:Function Name}\n*       [${2:File Path}]"
+    }
+}
